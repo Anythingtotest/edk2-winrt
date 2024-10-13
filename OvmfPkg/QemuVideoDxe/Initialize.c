@@ -146,7 +146,7 @@ UINT16 Seq_1024_768_32bpp_60[15] = {
 QEMU_VIDEO_CIRRUS_MODES  QemuVideoCirrusModes[] = {
 //  {  640, 480, 8, 60, Crtc_640_480_256_60,  Seq_640_480_256_60,  0xe3 },
 //  {  800, 600, 8, 60, Crtc_800_600_256_60,  Seq_800_600_256_60,  0xef },
-//  {  640, 480, 32, 60, Crtc_640_480_32bpp_60,  Seq_640_480_32bpp_60,  0xef },
+  {  640, 480, 32, 60, Crtc_640_480_32bpp_60,  Seq_640_480_32bpp_60,  0xef },
 //  {  800, 600, 32, 60, Crtc_800_600_32bpp_60,  Seq_800_600_32bpp_60,  0xef },
 //  { 1024, 768, 8, 60, Crtc_1024_768_256_60, Seq_1024_768_256_60, 0xef }
   { 1024, 768, 24, 60, Crtc_1024_768_24bpp_60, Seq_1024_768_24bpp_60, 0xef }
@@ -209,8 +209,8 @@ QemuVideoCirrusModeSetup (
 /// Table of supported video modes
 ///
 QEMU_VIDEO_BOCHS_MODES  QemuVideoBochsModes[] = {
-/*{  640,  480, 32 },
-  {  800,  480, 32 },
+  {  640,  480, 32 },
+  /*{  800,  480, 32 },
   {  800,  600, 32 },
   {  832,  624, 32 },
   {  960,  640, 32 },
